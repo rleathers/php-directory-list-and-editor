@@ -78,26 +78,11 @@ function dirlist($dirpath = '.')
             <a href="$adir">$adir</a>|
 HTML;
         echo <<<HTML
-            <a href="mdr.php5?$adir=true">$adir</a>|
+            <a href="mdr.php5?$adir">$adir</a>|
 HTML;
         echo '<br>';
     }
     return $dirarray;
-}
-?>
-
-<?php
-////////* Functions *////////
-function dirlistbacktrack($dirpath = '.')
-{
-    $dirarray = scandir($dirpath);
-    foreach ($dirarray as $adir)
-    {
-        echo <<<HTML
-            <a href="mdr.php5?$adir=true">$adir</a>|
-HTML;
-    }
-    return dirlistbacktrack();
 }
 ?>
 
@@ -107,7 +92,13 @@ if ( $login === -1)
 {
     die();
 }
-
-dirlistbacktrack();
-
+if ( is_string( key($_GET) ) === true )
+{
+    $path = key($_GET);
+    dirlist($path);
+}
+else
+{
+    dirlist();
+}
 ?>
