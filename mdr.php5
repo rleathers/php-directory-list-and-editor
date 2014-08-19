@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset=UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="mdr.css">
     <title>mdr</title>
 </head>
@@ -55,19 +55,15 @@ if( isset($_POST['submit']) === true && $login === -1)
 <?php
 if ( $login === -1)
 {
-    echo "
+echo <<<HTML
         <body>
-
-            <form method=\"post\" action=\"mdr.php5\">
-                <h2>Username : <input type=\"text\" name=\"username\" value=\"$username\"></h2>
-                <h2>Password :&nbsp; <input type=\"password\" name=\"password\" value=\"$password\"> </h2>
-                <input type=\"submit\" name=\"submit\" value=\"admin\">
+            <form method="post" action="mdr.php5">
+                <h2>Username : <input type="text" name="username" value="$username"></h2>
+                <h2>Password :&nbsp; <input type="password" name="password" value="$password"> </h2>
+                <input type="submit" name="submit" value="admin">
             </form>
-
-            <a href=\"mdr.php5\" id=\"oo\" onclick=\"mdr.php?oo=true\">test</a>
-
         </body>
-        ";
+HTML;
 }
 ?>
 
@@ -78,13 +74,30 @@ function dirlist($dirpath = '.')
     $dirarray = scandir($dirpath);
     foreach ($dirarray as $adir)
     {
-
-        echo "<a href=\"$adir\">";
-        echo $adir;
-        echo '</a>';
+        echo <<<HTML
+            <a href="$adir">$adir</a>|
+HTML;
+        echo <<<HTML
+            <a href="mdr.php5?$adir=true">$adir</a>|
+HTML;
         echo '<br>';
     }
     return $dirarray;
+}
+?>
+
+<?php
+////////* Functions *////////
+function dirlistbacktrack($dirpath = '.')
+{
+    $dirarray = scandir($dirpath);
+    foreach ($dirarray as $adir)
+    {
+        echo <<<HTML
+            <a href="mdr.php5?$adir=true">$adir</a>|
+HTML;
+    }
+    return dirlistbacktrack();
 }
 ?>
 
@@ -95,6 +108,6 @@ if ( $login === -1)
     die();
 }
 
-dirlist();
+dirlistbacktrack();
 
 ?>

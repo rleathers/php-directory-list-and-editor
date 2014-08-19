@@ -1,19 +1,20 @@
 ﻿html
 {
     font-size: 18px;
-    color: #00ffff;
+    color: #c8ffff;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-align: left;
     line-height: 23px;
 
-    background-image: linear-gradient(to bottom left, #c5c5c5 0%, #333333 100%);
+    background-image: linear-gradient(to bottom left, #9e9e9e 0%, #333333 100%);
     height: 100%;
     margin: 0;
 }
 input
 {
+    text-shadow: 0px 1px 3px black;
     border: 3px solid;
     box-shadow:inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
     padding: 13px;
@@ -22,20 +23,10 @@ input
 }
 a
 {
-    display: block;
-    box-shadow: 0px 1px 4px #888888;
-    border-radius: 6px;
-    width: 129px;
-    padding: 15px;
-
+    padding: 10px;
+    line-height: 133%;
     text-align: center;
-    text-shadow: 0px 1px 3px gray;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
-
-    background-color: #008ad6;
-
-    opacity: 1;
+    font-size: 23px;
+    color: #c8ffff;
 }
