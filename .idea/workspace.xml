@@ -26,10 +26,10 @@
       <file leaf-file-name="mdr.php5" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mdr.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="1" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.65988374" vertical-offset="2016" max-vertical-offset="2834">
+            <state line="96" column="5" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.5843023" vertical-offset="2094" max-vertical-offset="2938">
               <folding>
-                <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-                <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+                <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+                <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/test directory/test.html" />
         <option value="$PROJECT_DIR$/mdr.css" />
         <option value="$PROJECT_DIR$/mdr.php5" />
+        <option value="$PROJECT_DIR$/testdir/masoud.html" />
       </list>
     </option>
   </component>
@@ -106,7 +107,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,6 +141,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,7 +196,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11745828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.118741974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -229,10 +230,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mdr.php5">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="1" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0" vertical-offset="2016" max-vertical-offset="2834">
+          <folding>
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdr.php5">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="22" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2730">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -248,8 +259,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="22" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2730">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -265,8 +276,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="1" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="1966" max-vertical-offset="2730">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -282,8 +293,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="8" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="1886" max-vertical-offset="2574">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -292,8 +303,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="9" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1872">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -302,8 +313,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="32" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1638">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -319,8 +330,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="35" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1488">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -329,8 +340,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1488">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -339,8 +350,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1488">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -349,8 +360,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="0" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1488">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -359,8 +370,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1272">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -369,8 +380,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1272">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -382,16 +393,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="87" selection-end="87" vertical-scroll-proportion="0.22674419" vertical-offset="0" max-vertical-offset="688">
-          <folding />
-        </state>
+        <state line="6" column="4" selection-start="87" selection-end="87" vertical-scroll-proportion="0.22674419" vertical-offset="0" max-vertical-offset="688" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testdir/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="70" selection-end="70" vertical-scroll-proportion="0.22674419" vertical-offset="0" max-vertical-offset="688">
-          <folding />
-        </state>
+        <state line="6" column="5" selection-start="70" selection-end="70" vertical-scroll-proportion="0.22674419" vertical-offset="0" max-vertical-offset="688" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdr.css">
@@ -401,12 +408,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testdir/masoud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="71" selection-end="71" vertical-scroll-proportion="0.22674419" vertical-offset="0" max-vertical-offset="688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mdr.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="1" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.65988374" vertical-offset="2016" max-vertical-offset="2834">
+        <state line="96" column="5" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.5843023" vertical-offset="2094" max-vertical-offset="2938">
           <folding>
-            <marker date="1408475986013" expanded="true" signature="1052:1396" placeholder="..." />
-            <marker date="1408475986013" expanded="true" signature="1103:1380" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1052:1396" placeholder="..." />
+            <marker date="1408478382762" expanded="true" signature="1103:1380" placeholder="..." />
           </folding>
         </state>
       </provider>
