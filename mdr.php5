@@ -74,9 +74,18 @@ function dirlist($dirpath = '.')
     $dirarray = scandir($dirpath);
     foreach ($dirarray as $adir)
     {
-        echo <<<HTML
-            <a href="mdr.php5?$adir">$adir</a>|
+        if ( is_file($adir) === true)//is a file
+        {
+            echo <<<HTML
+            <a href="mdr.php5?$adir=file">$adir</a>|
 HTML;
+        }
+        else
+        {
+            echo <<<HTML
+            <a href="mdr.php5?$adir=dir">$adir</a>|
+HTML;
+        }
         echo '<br>';
     }
 }
@@ -91,14 +100,14 @@ if ( $login === -1)
 if ( is_string( key($_GET) ) === true )
 {
     $path = key($_GET);
-    if ( file_exists($path) === true)//is a folder
+    $path = str_replace('_','.',$path);
+    if ( is_file($path) === true)//is a file
+    {
+        header("location: $path");
+    }
+    else // is a folder
     {
         dirlist($path);
-    }
-    else // is a file
-    {
-        $path = str_replace('_','.',$path);
-        header("location: $path");
     }
 }
 else
