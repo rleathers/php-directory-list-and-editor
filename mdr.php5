@@ -8,6 +8,45 @@
 </head>
 </html>
 
+
+<?php
+////////* Functions *////////
+function dirlist($dirpath = '.')
+{
+    $dirarray = scandir($dirpath);
+    foreach ($dirarray as $adir)
+    {
+        if ( is_file("$dirpath/$adir") === true)// is a file
+        {
+            echo <<<HTML
+            <a href="mdr.php5?$adir=file">$adir</a>|
+HTML;
+        }
+        else// is a folder
+        {
+            echo <<<HTML
+            <a href="mdr.php5?$adir=dir">$adir</a>|
+HTML;
+        }
+        echo '<br>';
+    }
+}
+function detectrefresh()
+{
+    $pageWasRefreshed = isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] === 'max-age=0';
+
+    if($pageWasRefreshed )
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}
+?>
+
 <?php
 ////////* Session Control *////////
 session_start();
@@ -68,46 +107,36 @@ HTML;
 ?>
 
 <?php
-////////* Functions *////////
-function dirlist($dirpath = '.')
-{
-    $dirarray = scandir($dirpath);
-    foreach ($dirarray as $adir)
-    {
-        if ( is_file($adir) === true)//is a file
-        {
-            echo <<<HTML
-            <a href="mdr.php5?$adir=file">$adir</a>|
-HTML;
-        }
-        else
-        {
-            echo <<<HTML
-            <a href="mdr.php5?$adir=dir">$adir</a>|
-HTML;
-        }
-        echo '<br>';
-    }
-}
-?>
 
-<?php
-
+////////* check valid root *////////
 if ( $login === -1)
 {
     die();
 }
+if( isset( $_SESSION['currentpath'] ) === false )
+{
+    $_SESSION['currentpath'] = array(".");
+    //
+    //var_dump($_SESSION['currentpath']);
+}
+////////* browse *////////
 if ( is_string( key($_GET) ) === true )
 {
     $path = key($_GET);
-    $path = str_replace('_','.',$path);
-    if ( is_file($path) === true)//is a file
+    if( detectrefresh() == false )
     {
-        header("location: $path");
+        array_push( $_SESSION['currentpath'] , $path );
     }
-    else // is a folder
+    var_dump($_SESSION['currentpath']);
+
+    if( $_GET["$path"] === "dir" )
     {
         dirlist($path);
+    }
+    else
+    {
+        $path = str_replace('_','.',$path);
+        header("location: $path");
     }
 }
 else
