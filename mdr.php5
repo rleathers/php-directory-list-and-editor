@@ -11,12 +11,25 @@
 
 <?php
 ////////* Functions *////////
-function dirlist($dirpath = '.')
+function dirlist($dirpath)
 {
-    $dirarray = scandir($dirpath);
+
+    var_dump( $dirpath );
+
+    $realpath = realpath('.');
+    $realpath .= '/';
+    foreach( $dirpath as $value)
+    {
+        $realpath .= $value;
+        $realpath .= '/';
+    }
+
+    var_dump( $realpath );
+
+    $dirarray = scandir($realpath);
     foreach ($dirarray as $adir)
     {
-        if ( is_file("$dirpath/$adir") === true)// is a file
+        if ( is_file("$realpath/$adir") === true)// is a file
         {
             echo <<<HTML
             <a href="mdr.php5?$adir=file">$adir</a>|
@@ -115,8 +128,7 @@ if ( $login === -1)
 }
 if( isset( $_SESSION['currentpath'] ) === false )
 {
-    $_SESSION['currentpath'] = array(".");
-    //
+    $_SESSION['currentpath'] = array();
     //var_dump($_SESSION['currentpath']);
 }
 ////////* browse *////////
@@ -127,11 +139,9 @@ if ( is_string( key($_GET) ) === true )
     {
         array_push( $_SESSION['currentpath'] , $path );
     }
-    var_dump($_SESSION['currentpath']);
-
     if( $_GET["$path"] === "dir" )
     {
-        dirlist($path);
+        dirlist($_SESSION['currentpath']);
     }
     else
     {
@@ -141,6 +151,6 @@ if ( is_string( key($_GET) ) === true )
 }
 else
 {
-    dirlist();
+    dirlist( array() );
 }
 ?>
