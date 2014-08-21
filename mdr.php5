@@ -46,11 +46,11 @@ function dirlist($currentpatharray)
     $hardpath = realpath('.');
     $hardpath .= '/';
     $webpath = $_SESSION['url'];
-    foreach( $currentpatharray as $value)
+    foreach( $currentpatharray as $key => $value)
     {
-        $webpath .= $value;
+        $webpath .= $key;
         $webpath .= '/';
-        $hardpath .= $value;
+        $hardpath .= $key;
         $hardpath .= '/';
     }
     $dirarray = scandir($hardpath);
@@ -61,10 +61,9 @@ function dirlist($currentpatharray)
         $webpathtemp = $webpath . $adir;
         if ( is_file($ffpath) === true)// is a file
         {
-            //$ffpath = str_replace("\\",'\\\\',$ffpath);
             $ffpath = substr_replace($ffpath, 'file:\\\\\\', 0, 0);
             echo <<<HTML
-            <a href="$ffpath">$adir ( form hard )</a>|
+            <a href="$ffpath">$adir ( localhost )</a>|
             <a href="$webpathtemp">$adir ( form web )</a>|
 HTML;
         }
