@@ -63,8 +63,9 @@ function dirlist($currentpatharray)
         {
             $ffpath = substr_replace($ffpath, 'file:\\\\\\', 0, 0);
             echo <<<HTML
-            <a href="$ffpath">$adir ( localhost )</a>|
+            <a href="$ffpath">$adir ( localhost {for test} )</a>|
             <a href="$webpathtemp">$adir ( form web )</a>|
+            <a href="#?edit=true">$adir ( edit )</a>|
 HTML;
         }
         else// is a folder
@@ -152,7 +153,7 @@ if ( is_string( key($_GET) ) === true )
     echo " get" ;
     var_dump( $_GET );
     $path = key($_GET);
-    if( $_GET["$path"] === "dir" )
+    if( 1 )
     {
         dirlist($_GET);
     }
