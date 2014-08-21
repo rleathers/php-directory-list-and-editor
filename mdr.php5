@@ -33,16 +33,20 @@ if( isset($_SESSION['password']) === false )
     $_SESSION['password'] = "";
 }
 $password = $_SESSION['password'];
+if( isset( $_SESSION['currentpath'] ) === false )
+{
+    $_SESSION['currentpath'] = array();
+}
 ?>
 
 <?php
 ////////* Functions *////////
-function dirlist($dirpath)
+function dirlist($currentpatharray)
 {
     $hardpath = realpath('.');
     $hardpath .= '/';
     $webpath = $_SESSION['url'];
-    foreach( $dirpath as $value)
+    foreach( $currentpatharray as $value)
     {
         $webpath .= $value;
         $webpath .= '/';
@@ -66,8 +70,18 @@ HTML;
         }
         else// is a folder
         {
+            $createurlParameter = "";
+            foreach ( $_GET as $key => $dir )
+            {
+                $createurlParameter .= $key;
+                $createurlParameter .= '=';
+                $createurlParameter .= $dir;
+                $createurlParameter .= "&";
+            }
+            $createurlParameter .= $adir;
+            $createurlParameter .= "=dir";
             echo <<<HTML
-            <a href="mdr.php5?$adir=dir">$adir</a>|
+            <a href="mdr.php5?$createurlParameter">$adir</a>|
 HTML;
         }
         echo '<br>';
@@ -133,23 +147,15 @@ if ( $login === -1)
 {
     die();
 }
-if( isset( $_SESSION['currentpath'] ) === false )
-{
-    $_SESSION['currentpath'] = array();
-}
 ////////* browse *////////
 if ( is_string( key($_GET) ) === true )
 {
+    echo " get" ;
     var_dump( $_GET );
-    var_dump( $_SESSION['currentpath'] );
     $path = key($_GET);
     if( $_GET["$path"] === "dir" )
     {
-        if( detectrefresh() == false )
-        {
-            array_push( $_SESSION['currentpath'] , $path );
-        }
-        dirlist($_SESSION['currentpath']);
+        dirlist($_GET);
     }
     else
     {
