@@ -150,8 +150,8 @@ if ( $login === -1)
 ////////* browse *////////
 if ( is_string( key($_GET) ) === true )
 {
-    echo " get" ;
-    var_dump( $_GET );
+    echo " get" ;var_dump( $_GET );
+
     $path = key($_GET);
     if( 1 )
     {
@@ -159,7 +159,9 @@ if ( is_string( key($_GET) ) === true )
     }
     else
     {
-        // do sonething
+        $source = fopen("test.html", "r") or die("cant file!");
+        echo fread($source,filesize("test.html"));
+        fclose($source);
     }
 }
 else
