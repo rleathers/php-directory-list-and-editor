@@ -39,22 +39,29 @@ $password = $_SESSION['password'];
 ////////* Functions *////////
 function dirlist($dirpath)
 {
-    $realpath = realpath('.');
-    $realpath .= '/';
+    $hardpath = realpath('.');
+    $hardpath .= '/';
+    $webpath = $_SESSION['url'];
     foreach( $dirpath as $value)
     {
-        $realpath .= $value;
-        $realpath .= '/';
+        $webpath .= $value;
+        $webpath .= '/';
+        $hardpath .= $value;
+        $hardpath .= '/';
     }
-    $dirarray = scandir($realpath);
-    $realpath = str_replace('\\','/',$realpath);
-
+    $dirarray = scandir($hardpath);
+    $hardpath = str_replace("/",'\\',$hardpath);
     foreach ($dirarray as $adir)
     {
-        if ( is_file("$realpath/$adir") === true)// is a file
+        $ffpath = $hardpath . $adir;
+        $webpathtemp = $webpath . $adir;
+        if ( is_file($ffpath) === true)// is a file
         {
+            //$ffpath = str_replace("\\",'\\\\',$ffpath);
+            $ffpath = substr_replace($ffpath, 'file:\\\\\\', 0, 0);
             echo <<<HTML
-            <a href="$_SESSION[url]/$adir">$adir</a>|
+            <a href="$ffpath">$adir ( form hard )</a>|
+            <a href="$webpathtemp">$adir ( form web )</a>|
 HTML;
         }
         else// is a folder
@@ -134,6 +141,7 @@ if( isset( $_SESSION['currentpath'] ) === false )
 if ( is_string( key($_GET) ) === true )
 {
     var_dump( $_GET );
+    var_dump( $_SESSION['currentpath'] );
     $path = key($_GET);
     if( $_GET["$path"] === "dir" )
     {
@@ -145,18 +153,18 @@ if ( is_string( key($_GET) ) === true )
     }
     else
     {
-        $realpath = realpath('.');
-        $realpath .= '/';
+        $hardpath = realpath('.');
+        $hardpath .= '/';
         foreach( $_SESSION['currentpath'] as $value)
         {
-            $realpath .= $value;
-            $realpath .= '/';
+            $hardpath .= $value;
+            $hardpath .= '/';
         }
         $path = str_replace('_','.',$path);
-        $realpath .= $path;
-        var_dump($realpath);
+        $hardpath .= $path;
+        var_dump($hardpath);
 
-        header("location: $realpath");
+        header("location: $hardpath");
     }
 }
 else
