@@ -153,18 +153,7 @@ if ( is_string( key($_GET) ) === true )
     }
     else
     {
-        $hardpath = realpath('.');
-        $hardpath .= '/';
-        foreach( $_SESSION['currentpath'] as $value)
-        {
-            $hardpath .= $value;
-            $hardpath .= '/';
-        }
-        $path = str_replace('_','.',$path);
-        $hardpath .= $path;
-        var_dump($hardpath);
-
-        header("location: $hardpath");
+        // do sonething
     }
 }
 else
