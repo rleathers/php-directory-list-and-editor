@@ -1,7 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mdr.css">
+    <title>mdr</title>
+</head>
+</html>
+
+
 <?php
-var_dump($_GET);
-$p = $_GET['path'];
-$source = fopen($p, "r");
-echo fread($source,filesize($p));
+$path = $_GET['path'];
+$source = fopen($path , "r");
+echo "<textarea class=\"editor\">";
+echo fread($source,filesize($path ));
+echo "</textarea>";
 fclose($source);
 ?>
