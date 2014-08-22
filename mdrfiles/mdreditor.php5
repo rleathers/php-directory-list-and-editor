@@ -17,11 +17,13 @@ fclose($source);
 
 echo<<<HTML
 
-<form method="post" action="mdreditor.php5">
-    <textarea class="editor" rows='20'>
-    $test;
-    </textarea>;
-</form>
+<span>
+    <form id="format" method="post" action="mdreditor.php5">
+        <input type="submit" name="submit" value="Apply">
+    </form>
+</span>
+<br>
+<textarea name="textarea" form="format" class="editor" rows="20">$test</textarea>
 
 HTML;
 
