@@ -28,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mdreditor.php5" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mdreditor.php5" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mdreditor.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="-7.428571" vertical-offset="0" max-vertical-offset="624">
+            <state line="8" column="7" selection-start="139" selection-end="139" vertical-scroll-proportion="0.303207" vertical-offset="0" max-vertical-offset="686">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdr.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mdr.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdr.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="17" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.63276833" vertical-offset="852" max-vertical-offset="1560">
+            <state line="53" column="19" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="852" max-vertical-offset="1586">
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/testdir/test2/ht.html" />
         <option value="$PROJECT_DIR$/mdr.php5" />
-        <option value="$PROJECT_DIR$/mdreditor.php5" />
         <option value="$PROJECT_DIR$/mdr.css" />
+        <option value="$PROJECT_DIR$/mdreditor.php5" />
       </list>
     </option>
   </component>
@@ -602,16 +602,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mdreditor.php5">
+    <entry file="file://$PROJECT_DIR$/mdr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="-7.428571" vertical-offset="0" max-vertical-offset="624">
+        <state line="53" column="19" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="852" max-vertical-offset="1586">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mdr.css">
+    <entry file="file://$PROJECT_DIR$/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="17" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.63276833" vertical-offset="852" max-vertical-offset="1560">
+        <state line="8" column="7" selection-start="139" selection-end="139" vertical-scroll-proportion="0.303207" vertical-offset="0" max-vertical-offset="686">
           <folding />
         </state>
       </provider>

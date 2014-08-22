@@ -12,7 +12,7 @@
 <?php
 $path = $_GET['path'];
 $source = fopen($path , "r");
-echo "<textarea class=\"editor\">";
+echo "<textarea class=\"editor\" rows='20'>";
 echo fread($source,filesize($path ));
 echo "</textarea>";
 fclose($source);
