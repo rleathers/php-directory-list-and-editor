@@ -119,8 +119,8 @@ echo <<<HTML
         <body>
             <form method="post" action="mdr.php5">
                 <h2>Username : <input type="text" name="username" value="$username"></h2>
-                <h2>Password :&nbsp; <input type="password" name="password" value="$password"> </h2>
-                <input type="submit" name="submit" value="admin">
+                <h2>Password :&nbsp;<input type="password" name="password" value="$password"></h2>
+                <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="admin"></h2>
             </form>
         </body>
 HTML;
