@@ -1,7 +1,7 @@
 php-directory listing and editor
 ==============================
 
-simple php directory listing with simple editor for edit your files and pages on web.
+simple php directory lister included with a simple file editor for edit and change pages and other file like .php on browser.
 
 - Edit 
 - list
