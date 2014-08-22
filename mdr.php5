@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="libraries/mdr.css">
+    <link rel="stylesheet" href="mdrfiles/mdr.css">
     <title>mdr</title>
 </head>
 </html>
@@ -64,7 +64,7 @@ function dirlist($currentpatharray)
             $pathedit = $ffpath;
             $ffpath = substr_replace($ffpath, 'file:\\\\\\', 0, 0);
             echo <<<HTML
-            <a href="libraries/mdreditor.php5?path=$pathedit" target="_blank">$adir &nbsp&nbsp&nbsp&nbsp&nbsp edit file</a>|
+            <a href="mdrfiles/mdreditor.php5?path=$pathedit" target="_blank">$adir &nbsp&nbsp&nbsp&nbsp&nbsp edit file</a>|
             <a href="$webpathtemp">web url </a>|
             <a href="$ffpath">hard file path.</a>
 HTML;
