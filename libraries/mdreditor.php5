@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="htmlid">
 
 <head>
     <meta charset="UTF-8">
@@ -8,20 +8,28 @@
 </head>
 </html>
 
-
 <?php
 
 $path = $_GET['path'];
 $source = fopen($path , "r");
-echo "<textarea class=\"editor\" rows='20'>";
-echo fread($source,filesize($path ));
-echo "</textarea>";
+$test = fread($source,filesize($path ));
 fclose($source);
 
 echo<<<HTML
-<form method="post" action="mdreditor.php5">
 
+<form method="post" action="mdreditor.php5">
+    <textarea class="editor" rows='20'>
+    $test;
+    </textarea>;
 </form>
+
+HTML;
+
+
+echo<<<HTML
+
+    <iframe src="out.php5"></iframe>
+
 HTML;
 
 ?>

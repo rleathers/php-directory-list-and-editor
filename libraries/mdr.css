@@ -1,4 +1,4 @@
-﻿html
+﻿.htmlid
 {
     font-size: 18px;
     color: #c8ffff;
@@ -36,6 +36,32 @@ a
 .editor
 {
     width: 45%;
+    border-top: #808080 5px inset;
+    border-right: #808080 5px outset;
+    border-left: #808080 2px inset;
+    border-bottom: #808080 2px outset;
+
+    background: inherit;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+
+    -webkit-box-shadow: 0px 0px 33px 0px #333333;
+    -moz-box-shadow: 0px 0px 33px 0px #333333;
+    box-shadow: 0px 0px 33px 0px #333333;
+
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 19px;
+    text-shadow: 0px 1px 1px black;
+    color: #c8ffff;
+}
+iframe
+{
+    width: 53%;
+    height: 95%;
+    right: .3%;
+    top: 1%;
+    position: absolute;
     border-top: #808080 5px inset;
     border-right: #808080 5px outset;
     border-left: #808080 2px inset;
