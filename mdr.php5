@@ -65,7 +65,7 @@ function dirlist($currentpatharray)
             echo <<<HTML
             <a href="$ffpath">$adir | file path (localhost)</a>|
             <a href="$webpathtemp">web url </a>|
-            <a href="mdreditor.php5#$ffpath" target="_blank">edit file</a>|
+            <a href="mdreditor.php5?path=$ffpath" target="_blank">edit file</a>|
 HTML;
         }
         else// is a folder
