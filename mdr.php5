@@ -65,7 +65,7 @@ function dirlist($currentpatharray)
             echo <<<HTML
             <a href="$ffpath">$adir ( localhost {for test} )</a>|
             <a href="$webpathtemp">$adir ( form web )</a>|
-            <a href="#?edit=true">$adir ( edit )</a>|
+            <a href="mdreditor.php5?edit=true" target="_blank">$adir ( edit )</a>|
 HTML;
         }
         else// is a folder
@@ -86,20 +86,6 @@ HTML;
         }
         echo '<br>';
     }
-}
-function detectrefresh()
-{
-    $pageWasRefreshed = isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] === 'max-age=0';
-
-    if($pageWasRefreshed )
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-
 }
 ?>
 
@@ -150,19 +136,7 @@ if ( $login === -1)
 ////////* browse *////////
 if ( is_string( key($_GET) ) === true )
 {
-    echo " get" ;var_dump( $_GET );
-
-    $path = key($_GET);
-    if( 1 )
-    {
-        dirlist($_GET);
-    }
-    else
-    {
-        $source = fopen("test.html", "r") or die("cant file!");
-        echo fread($source,filesize("test.html"));
-        fclose($source);
-    }
+    dirlist($_GET);
 }
 else
 {
