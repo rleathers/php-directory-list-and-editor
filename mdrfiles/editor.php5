@@ -49,7 +49,7 @@ if ( isset ( $_GET['bpen'] ) === true && $_GET['bpen'] === "true" )
 
 <?php
 
-if ( isset ( $_POST['save'] ) === true )
+if ( isset ( $_POST['save'] ) === true && isset ( $_POST['textarea'] ) === true )
 {
     file_put_contents( $_GET['path'] , $_POST['textarea'] );
 }
@@ -67,8 +67,7 @@ $text = file_get_contents("out.php5");
 
 echo <<<HTML
 <span>
-
-    <form method="post" action="editor.php5?path=$_GET[path]&weburl=$_GET[weburl]">
+    <form id="format" method="post" action="editor.php5?path=$_GET[path]&weburl=$_GET[weburl]">
         <input class="inputws" type="submit" name="submit" value="Apply">
         <input class="inputws" type="submit" name="save" value="save">
         <a class="abu" href="$_GET[weburl]">web url</a>
