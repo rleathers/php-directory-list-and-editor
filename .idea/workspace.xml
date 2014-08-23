@@ -31,26 +31,30 @@
       <file leaf-file-name="mdr.php5" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdr.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="91" selection-start="3268" selection-end="3268" vertical-scroll-proportion="-90.62857" vertical-offset="0" max-vertical-offset="3926">
-              <folding>
-                <marker date="1408818985414" expanded="true" signature="36:162" placeholder="..." />
-                <marker date="1408818985414" expanded="true" signature="44:154" placeholder="..." />
-                <marker date="1408818985414" expanded="true" signature="2864:3360" placeholder="..." />
-                <marker date="1408818985414" expanded="true" signature="2928:3340" placeholder="..." />
-              </folding>
+            <state line="122" column="91" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="3172" max-vertical-offset="3926">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editor.php5" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="editor.php5" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdrfiles/editor.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="25" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.5290698" vertical-offset="1014" max-vertical-offset="2444">
+            <state line="51" column="22" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-31.2" vertical-offset="234" max-vertical-offset="2444">
               <folding>
                 <marker date="1408819321814" expanded="true" signature="1348:1427" placeholder="..." />
                 <marker date="1408819321814" expanded="true" signature="1348:1729" placeholder="..." />
                 <marker date="1408819321814" expanded="true" signature="1433:1721" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.3401163" vertical-offset="0" max-vertical-offset="688">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,7 +77,6 @@
         <option value="$PROJECT_DIR$/test directory/test.html" />
         <option value="$PROJECT_DIR$/testdir/masoud.html" />
         <option value="$PROJECT_DIR$/testdir/e.html" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/testdir/test2/ht.html" />
         <option value="$PROJECT_DIR$/mdreditor.php5" />
         <option value="$PROJECT_DIR$/mdr.css" />
@@ -84,6 +87,7 @@
         <option value="$PROJECT_DIR$/mdrfiles/mdr.css" />
         <option value="$PROJECT_DIR$/mdr.php5" />
         <option value="$PROJECT_DIR$/mdrfiles/editor.php5" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -139,7 +143,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,26 +157,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php-directory-listing-and-editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php-directory-listing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php-directory-listing-and-editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mdrfiles" />
+              <option name="myItemId" value="php-directory-list-and-editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,8 +262,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14505777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14698331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -283,6 +272,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -317,31 +307,19 @@
     <entry file="file://$PROJECT_DIR$/mdr.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="137" column="8" selection-start="3478" selection-end="3478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3926">
-          <folding>
-            <marker date="1408818985414" expanded="true" signature="36:162" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="44:154" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="2864:3360" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="2928:3340" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="21" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="2392">
-          <folding />
-        </state>
+        <state line="21" column="21" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="2392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdr.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="121" column="42" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0" vertical-offset="3146" max-vertical-offset="3484">
-          <folding>
-            <marker date="1408818985414" expanded="true" signature="36:162" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="44:154" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="2864:3360" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="2928:3340" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -358,9 +336,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="14" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2392">
-          <folding />
-        </state>
+        <state line="62" column="14" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/out.php5">
@@ -604,11 +580,6 @@
         <state line="8" column="7" selection-start="81" selection-end="81" vertical-scroll-proportion="0.30232558" vertical-offset="0" max-vertical-offset="688" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="0.037900876" vertical-offset="0" max-vertical-offset="686" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/out.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-2.2285714" vertical-offset="26" max-vertical-offset="442" />
@@ -616,31 +587,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="619" selection-end="626" vertical-scroll-proportion="0.82019365" vertical-offset="83" max-vertical-offset="2990">
-          <folding />
-        </state>
+        <state line="26" column="8" selection-start="619" selection-end="626" vertical-scroll-proportion="0.82019365" vertical-offset="83" max-vertical-offset="2990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdr.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="91" selection-start="3268" selection-end="3268" vertical-scroll-proportion="-90.62857" vertical-offset="0" max-vertical-offset="3926">
-          <folding>
-            <marker date="1408818985414" expanded="true" signature="36:162" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="44:154" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="2864:3360" placeholder="..." />
-            <marker date="1408818985414" expanded="true" signature="2928:3340" placeholder="..." />
-          </folding>
+        <state line="122" column="91" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="3172" max-vertical-offset="3926">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/editor.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="25" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.5290698" vertical-offset="1014" max-vertical-offset="2444">
+        <state line="51" column="22" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-31.2" vertical-offset="234" max-vertical-offset="2444">
           <folding>
             <marker date="1408819321814" expanded="true" signature="1348:1427" placeholder="..." />
             <marker date="1408819321814" expanded="true" signature="1348:1729" placeholder="..." />
             <marker date="1408819321814" expanded="true" signature="1433:1721" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.3401163" vertical-offset="0" max-vertical-offset="688">
+          <folding />
         </state>
       </provider>
     </entry>
