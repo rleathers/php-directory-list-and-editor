@@ -16,7 +16,6 @@ if( isset($_SESSION['url']) === false )
     $_SESSION['url'] = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $_SESSION['url'] = str_replace('mdr.php5','',$_SESSION['url']);
 }
-
 if( isset($_SESSION['login']) === false )
 {
     $_SESSION['login'] = -1;
@@ -136,8 +135,7 @@ if ( is_string( key($_GET) ) === true )
     $keyg = key($_GET);
     if ( $keyg === "one" && $_GET[$keyg] === "true" )
     {
-        $header = $_SESSION['url']."mdr.php5";
-        header("Location: $header");
+        header("Location: mdr.php5");
     }
     dirlist($_GET);
 }
