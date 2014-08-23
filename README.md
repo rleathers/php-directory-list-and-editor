@@ -14,4 +14,4 @@ place mdrfiles and mdr.php5 in site.
 screenshot
 ==============================
 
-<img src="http://i58.tinypic.com/iqxbba.png" >
+<img src="http://i60.tinypic.com/35mjmuu.png" border="0" alt="Image and video hosting by TinyPic"></a>
