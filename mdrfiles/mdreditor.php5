@@ -10,6 +10,15 @@
 
 <?php
 
+if( isset ( $_POST['textarea'] ) )
+{
+    echo $_POST['textarea'];
+}
+?>
+
+
+<?php
+
 $path = $_GET['path'];
 $source = fopen($path , "r");
 $test = fread($source,filesize($path ));
@@ -18,7 +27,7 @@ fclose($source);
 echo<<<HTML
 
 <span>
-    <form id="format" method="post" action="mdreditor.php5">
+    <form id="format" method="post" action="mdreditor.php5?path=$_GET[path]">
         <input type="submit" name="submit" value="Apply">
     </form>
 </span>
