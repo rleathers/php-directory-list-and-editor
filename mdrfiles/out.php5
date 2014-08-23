@@ -5,8 +5,8 @@
 <title>reza</title>
 </head>
 
-<body bgcolor="gray">
-adaaaaaadddllllaaa
+<body>
+ad
 </body>
 
 </html>

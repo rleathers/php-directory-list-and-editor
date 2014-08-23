@@ -118,7 +118,7 @@ if ( $login === -1)
 {
     echo<<<HTML
             <body>
-                <form method="post" action="mdr.php5">
+                <form method="post" action="mdr.php5?one=true">
                     <h2>Username : <input type="text" name="username" value="$_SESSION[username]"></h2>
                     <h2>Password :&nbsp;<input type="password" name="password" value="$_SESSION[username]"></h2>
                     <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="admin"></h2>
@@ -133,6 +133,12 @@ HTML;
 ////////* browse *////////
 if ( is_string( key($_GET) ) === true )
 {
+    $keyg = key($_GET);
+    if ( $keyg === "one" && $_GET[$keyg] === "true" )
+    {
+        $header = $_SESSION['url']."mdr.php5";
+        header("Location: $header");
+    }
     dirlist($_GET);
 }
 else

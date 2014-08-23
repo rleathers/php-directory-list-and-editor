@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3387195f-d87a-4783-9df3-23a1cdf8b9e2" name="Default" comment="h">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mdrfiles/mdreditor.php5" afterPath="$PROJECT_DIR$/mdrfiles/mdreditor.php5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mdr.php5" afterPath="$PROJECT_DIR$/mdr.php5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mdr.php5" afterPath="$PROJECT_DIR$/mdr.php5" />
     </list>
     <ignored path="mdr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,18 +31,15 @@
       <file leaf-file-name="mdr.php5" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mdr.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="42" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.30666667" vertical-offset="2601" max-vertical-offset="3484">
+            <state line="141" column="19" selection-start="3580" selection-end="3580" vertical-scroll-proportion="0.6533333" vertical-offset="2029" max-vertical-offset="2782">
               <folding>
-                <element signature="e#224#409#0" expanded="false" />
-                <element signature="e#516#598#0" expanded="false" />
-                <element signature="e#600#680#0" expanded="false" />
-                <element signature="e#682#775#0" expanded="false" />
-                <marker date="1408776719197" expanded="true" signature="2836:2987" placeholder="..." />
-                <marker date="1408776719197" expanded="true" signature="2836:2979" placeholder="..." />
-                <marker date="1408776719197" expanded="true" signature="2836:3092" placeholder="..." />
-                <marker date="1408776719197" expanded="true" signature="2836:3278" placeholder="..." />
-                <marker date="1408776719197" expanded="true" signature="2891:2987" placeholder="..." />
-                <marker date="1408776719197" expanded="true" signature="2891:2979" placeholder="..." />
+                <element signature="n#dirlist#0;n#!!top" expanded="false" />
+                <marker date="1408778388235" expanded="true" signature="2836:2996" placeholder="..." />
+                <marker date="1408778388235" expanded="true" signature="2836:2988" placeholder="..." />
+                <marker date="1408778388235" expanded="true" signature="2836:3101" placeholder="..." />
+                <marker date="1408778388235" expanded="true" signature="2836:2891" placeholder="..." />
+                <marker date="1408778388235" expanded="true" signature="2836:3287" placeholder="..." />
+                <marker date="1408778388235" expanded="true" signature="2900:3267" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -131,7 +128,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,6 +162,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +262,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14377406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14569962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -273,13 +270,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -306,65 +303,60 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mdr.php5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="42" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0" vertical-offset="3146" max-vertical-offset="3484">
+          <folding>
+            <element signature="n#dirlist#0;n#!!top" expanded="false" />
+            <marker date="1408778388235" expanded="true" signature="2836:2996" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:2988" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:3101" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:2891" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:3287" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2900:3267" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="1326">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="14" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2392">
-          <folding />
-        </state>
+        <state line="62" column="14" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/out.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="52" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1092">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/out.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="52" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1092">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/out.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdr.php5">
@@ -375,22 +367,14 @@
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="27" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="676">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="32" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="312">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -402,11 +386,7 @@
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="2" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="260">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -418,11 +398,7 @@
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="2" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="260">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,43 +554,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="14" selection-start="1411" selection-end="1411" vertical-scroll-proportion="2.229599" vertical-offset="0" max-vertical-offset="2392">
-          <folding />
-        </state>
+        <state line="62" column="14" selection-start="1411" selection-end="1411" vertical-scroll-proportion="2.229599" vertical-offset="0" max-vertical-offset="2392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/out.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-2.2285714" vertical-offset="26" max-vertical-offset="442">
-          <folding />
-        </state>
+        <state line="4" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-2.2285714" vertical-offset="26" max-vertical-offset="442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdrfiles/mdreditor.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="26" selection-start="593" selection-end="593" vertical-scroll-proportion="-28.971428" vertical-offset="0" max-vertical-offset="1716">
-          <folding>
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408775779631" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdr.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="42" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.30666667" vertical-offset="2601" max-vertical-offset="3484">
+        <state line="141" column="19" selection-start="3580" selection-end="3580" vertical-scroll-proportion="0.6533333" vertical-offset="2029" max-vertical-offset="2782">
           <folding>
-            <element signature="e#224#409#0" expanded="false" />
-            <element signature="e#516#598#0" expanded="false" />
-            <element signature="e#600#680#0" expanded="false" />
-            <element signature="e#682#775#0" expanded="false" />
-            <marker date="1408776719197" expanded="true" signature="2836:2987" placeholder="..." />
-            <marker date="1408776719197" expanded="true" signature="2836:2979" placeholder="..." />
-            <marker date="1408776719197" expanded="true" signature="2836:3092" placeholder="..." />
-            <marker date="1408776719197" expanded="true" signature="2836:3278" placeholder="..." />
-            <marker date="1408776719197" expanded="true" signature="2891:2987" placeholder="..." />
-            <marker date="1408776719197" expanded="true" signature="2891:2979" placeholder="..." />
+            <element signature="n#dirlist#0;n#!!top" expanded="false" />
+            <marker date="1408778388235" expanded="true" signature="2836:2996" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:2988" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:3101" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:2891" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2836:3287" placeholder="..." />
+            <marker date="1408778388235" expanded="true" signature="2900:3267" placeholder="..." />
           </folding>
         </state>
       </provider>
