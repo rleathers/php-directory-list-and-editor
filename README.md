@@ -1,7 +1,7 @@
 php directory browser and editor
 ==============================
 
-simple php directory lister that included with a simple file editor for edit and change pages and other file like .phpand others on browser.
+simple php directory lister that included with a simple file editor for edit and change pages and other file like .php and others on browser.
 
 - Edit
 - list
