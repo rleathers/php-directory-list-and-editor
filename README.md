@@ -10,6 +10,8 @@ install
 ==============================
 
 place mdrfiles and mdr.php5 in site.
+open mdr.php5.
+example : http://localhost:63342/php-directory-list-and-editor/mdr.php5
 
 screenshot
 ==============================
