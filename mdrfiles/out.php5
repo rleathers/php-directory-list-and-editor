@@ -1,4 +1,12 @@
+<!Doctype html>
+<html>
 
-<?php
-echo "DAD";
-?>
+<head>
+<title>reza</title>
+</head>
+
+<body bgcolor="gray">
+adaaaaaadddllllaaa
+</body>
+
+</html>
