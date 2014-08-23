@@ -10,4 +10,4 @@ simple php directory lister included with a simple file editor for edit and chan
 install
 ==============================
 
-place mdrfiles and mdr5.php5 in site.
+place mdrfiles and mdr.php5 in site.
