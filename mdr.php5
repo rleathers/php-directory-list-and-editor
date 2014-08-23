@@ -16,23 +16,23 @@ if( isset($_SESSION['url']) === false )
     $_SESSION['url'] = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $_SESSION['url'] = str_replace('mdr.php5','',$_SESSION['url']);
 }
+
 if( isset($_SESSION['login']) === false )
 {
     $_SESSION['login'] = -1;
 }
 $login = $_SESSION['login'];
 
-if( isset($_SESSION['username']) === false )
+if( isset( $_SESSION['username'] ) === false )
 {
     $_SESSION['username'] = "";
 }
-$username = $_SESSION['username'];
 
 if( isset($_SESSION['password']) === false )
 {
     $_SESSION['password'] = "";
 }
-$password = $_SESSION['password'];
+
 if( isset( $_SESSION['currentpath'] ) === false )
 {
     $_SESSION['currentpath'] = array();
@@ -113,27 +113,23 @@ if( isset($_POST['submit']) === true && $login === -1)
 ?>
 
 <?php
+////////* check valid root *////////
 if ( $login === -1)
 {
-echo <<<HTML
-        <body>
-            <form method="post" action="mdr.php5">
-                <h2>Username : <input type="text" name="username" value="$username"></h2>
-                <h2>Password :&nbsp;<input type="password" name="password" value="$password"></h2>
-                <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="admin"></h2>
-            </form>
-        </body>
+    echo<<<HTML
+            <body>
+                <form method="post" action="mdr.php5">
+                    <h2>Username : <input type="text" name="username" value="$_SESSION[username]"></h2>
+                    <h2>Password :&nbsp;<input type="password" name="password" value="$_SESSION[username]"></h2>
+                    <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="admin"></h2>
+                </form>
+            </body>
 HTML;
+    die();
 }
 ?>
 
 <?php
-
-////////* check valid root *////////
-if ( $login === -1)
-{
-    die();
-}
 ////////* browse *////////
 if ( is_string( key($_GET) ) === true )
 {
