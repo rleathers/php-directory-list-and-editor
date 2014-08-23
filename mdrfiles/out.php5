@@ -1,12 +1,13 @@
-<!Doctype html>
-<html>
+php directory browser and editor
+==============================
 
-<head>
-<title>reza</title>
-</head>
+simple php directory lister that included with a simple file editor for edit and change pages and other file like .php and others on browser.
 
-<body>
-ad
-</body>
+- Edit
+- list
 
-</html>
+
+install
+==============================
+
+place mdrfiles and mdr.php5 in site.
