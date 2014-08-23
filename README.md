@@ -6,7 +6,6 @@ simple php directory lister that included with a simple file editor for edit and
 - Edit
 - list
 
-
 install
 ==============================
 

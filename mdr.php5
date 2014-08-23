@@ -63,7 +63,7 @@ function dirlist($currentpatharray)
             $pathedit = $ffpath;
             $ffpath = substr_replace($ffpath, 'file:\\\\\\', 0, 0);
             echo <<<HTML
-            <a href="mdrfiles/editor.php5?path=$pathedit&bpen=true" target="_blank">$adir &nbsp&nbsp&nbsp&nbsp&nbsp - edit file</a>|
+            <a href="mdrfiles/editor.php5?path=$pathedit&bpen=true&weburl=$webpathtemp" target="_blank">$adir &nbsp&nbsp&nbsp&nbsp&nbsp - edit file</a>|
             <a href="$webpathtemp">web url </a>|
             <a href="$ffpath">hard file path.</a>
 HTML;
@@ -118,9 +118,9 @@ if ( $login === -1)
     echo<<<HTML
             <body>
                 <form method="post" action="mdr.php5?one=true">
-                    <h2>Username : <input type="text" name="username" value="$_SESSION[username]"></h2>
-                    <h2>Password :&nbsp;<input type="password" name="password" value="$_SESSION[username]"></h2>
-                    <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="admin"></h2>
+                    <h2>Username : <input class="ninput" type="text" name="username" value="$_SESSION[username]"></h2>
+                    <h2>Password :&nbsp;<input class="ninput" type="password" name="password" value="$_SESSION[username]"></h2>
+                    <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input class="ninput" type="submit" name="submit" value="admin"></h2>
                 </form>
             </body>
 HTML;

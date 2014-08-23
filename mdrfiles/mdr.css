@@ -12,7 +12,7 @@
     height: 100%;
     margin: 0;
 }
-input
+.ninput
 {
     text-shadow: 0px 1px 1px black;
     font-size: 16px;
@@ -23,6 +23,17 @@ input
     box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
     background: rgba(255,255,255,0.5);
     width: 133px;
+}
+.inputws
+{
+    text-shadow: 0px 1px 1px black;
+    font-size: 16px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 13px;
+    border: 0 solid #808080;
+    border-radius: 13px;
+    box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.5);
 }
 a
 {
@@ -84,4 +95,16 @@ iframe
     font-size: 19px;
     text-shadow: 0px 1px 1px black;
     color: #c8ffff;
+}
+.abu
+{
+    text-shadow: 0px 1px 1px black;
+    font-size: 16px;
+    color: black;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 13px;
+    border: 0 solid #808080;
+    border-radius: 13px;
+    box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.5);
 }

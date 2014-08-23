@@ -10,12 +10,18 @@
 
 <?php
 session_start();
+
 if ( isset ( $_SESSION['login'] ) === false )
 {
     $ur = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $ur = str_replace('mdrfiles/editor.php5','mdr.php5',$ur);
     header("Location: $ur");
     die();
+}
+
+if ( isset ( $_POST['logout'] ) === true )
+{
+    $_SESSION['login'] = -1;
 }
 if ( $_SESSION['login'] === -1 )
 {
@@ -58,11 +64,13 @@ if( isset ( $_POST['textarea'] ) )
 $text = file_get_contents("out.php5");
 
 echo <<<HTML
-
 <span>
-    <form id="format" method="post" action="editor.php5?path=$_GET[path]">
-        <input type="submit" name="submit" value="Apply">
-        <input type="submit" name="save" value="save">
+
+    <form method="post" action="editor.php5?path=$_GET[path]&weburl=$_GET[weburl]">
+        <input class="inputws" type="submit" name="submit" value="Apply">
+        <input class="inputws" type="submit" name="save" value="save">
+        <a class="abu" href="$_GET[weburl]">web url</a>
+        <input class="inputws" type="submit" name="logout" value="logout">
     </form>
 </span>
 <br>
