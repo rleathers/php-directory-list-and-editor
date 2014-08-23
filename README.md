@@ -9,9 +9,9 @@ simple php directory lister that included with a simple file editor for edit and
 install
 ==============================
 
-place mdrfiles and mdr.php5 in site.
-open mdr.php5.
-example : http://localhost:63342/php-directory-list-and-editor/mdr.php5
+- place mdrfiles and mdr.php5 in site.
+- open mdr.php5.
+- example : http://localhost:63342/php-directory-list-and-editor/mdr.php5
 
 screenshot
 ==============================
