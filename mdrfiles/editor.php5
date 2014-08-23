@@ -9,13 +9,14 @@
 </html>
 
 <?php
-session_start();
 
+session_start();
 if ( isset ( $_SESSION['login'] ) === false )
 {
     $ur = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $ur = str_replace('mdrfiles/editor.php5','mdr.php5',$ur);
     header("Location: $ur");
+    session_destroy();
     die();
 }
 
@@ -28,6 +29,7 @@ if ( $_SESSION['login'] === -1 )
     $ur = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $ur = str_replace('mdrfiles/editor.php5','mdr.php5',$ur);
     header("Location: $ur");
+    session_destroy();
     die();
 }
 ?>
