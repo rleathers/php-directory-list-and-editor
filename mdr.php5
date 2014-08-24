@@ -38,36 +38,20 @@ if( isset($_SESSION['password']) === false )
 
 function dirlist( $getpatharray )
 {
-    $ran = "";
-
     $hardpath = realpath('.');
     $hardpath .= '\\';
     $webpath = $_SESSION['url'];
 
     foreach( $getpatharray as $key => $value)
     {
-        if ( $value === 'forward')
-        {
-            $webpath .= $key;
-            $webpath .= '/';
-            $hardpath .= $key;
-            $hardpath .= '\\';
-        }
-        elseif ( $value === 'back')
-        {
-            $bn = basename( $hardpath );
-            $hardpath = str_replace("$bn\\",'',$hardpath);
-        }
+        $webpath .= $key;
+        $webpath .= '/';
+        $hardpath .= $key;
+        $hardpath .= '\\';
     }
-    //var_dump( $hardpath );
     $dirarray = scandir($hardpath);
-
-    if ( $dirarray[1] === '..' )
-    {
-        $ran = rand();
-        $dirarray[1] = "back $ran";
-    }
-
+    unset( $dirarray[1] );
+    unset( $dirarray[0] );
     foreach ( $dirarray as $adir )
     {
         $ffpath = $hardpath . $adir;
@@ -93,14 +77,7 @@ HTML;
                 $createurlParameter .= "&";
             }
             $createurlParameter .= $adir;
-            if( $adir === 'back '.$ran )
-            {
-                $createurlParameter .= "=back";
-            }
-            else
-            {
-                $createurlParameter .= "=forward";
-            }
+            $createurlParameter .= "=forward";
             echo <<<HTML
             <a href="mdr.php5?$createurlParameter">$adir</a>
 HTML;
