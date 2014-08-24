@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html class="htmlid">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="mdrfiles/mdr.css">
@@ -10,6 +9,7 @@
 
 <?php
 ////////* Session Control *////////
+
 session_start();
 if( isset($_SESSION['url']) === false )
 {
@@ -31,34 +31,48 @@ if( isset($_SESSION['password']) === false )
 {
     $_SESSION['password'] = "";
 }
-
-if( isset( $_SESSION['currentpath'] ) === false )
-{
-    $_SESSION['currentpath'] = array();
-}
 ?>
 
 <?php
 ////////* Functions *////////
-function dirlist($currentpatharray)
+
+function dirlist( $getpatharray )
 {
+    $ran = "";
+
     $hardpath = realpath('.');
-    $hardpath .= '/';
+    $hardpath .= '\\';
     $webpath = $_SESSION['url'];
-    foreach( $currentpatharray as $key => $value)
+
+    foreach( $getpatharray as $key => $value)
     {
-        $webpath .= $key;
-        $webpath .= '/';
-        $hardpath .= $key;
-        $hardpath .= '/';
+        if ( $value === 'forward')
+        {
+            $webpath .= $key;
+            $webpath .= '/';
+            $hardpath .= $key;
+            $hardpath .= '\\';
+        }
+        elseif ( $value === 'back')
+        {
+            $bn = basename( $hardpath );
+            $hardpath = str_replace("$bn\\",'',$hardpath);
+        }
     }
+    //var_dump( $hardpath );
     $dirarray = scandir($hardpath);
-    $hardpath = str_replace("/",'\\',$hardpath);
-    foreach ($dirarray as $adir)
+
+    if ( $dirarray[1] === '..' )
+    {
+        $ran = rand();
+        $dirarray[1] = "back $ran";
+    }
+
+    foreach ( $dirarray as $adir )
     {
         $ffpath = $hardpath . $adir;
         $webpathtemp = $webpath . $adir;
-        if ( is_file($ffpath) === true)// is a file
+        if ( is_file( $ffpath ) === true)// is a file
         {
             $pathedit = $ffpath;
             $ffpath = substr_replace($ffpath, 'file:\\\\\\', 0, 0);
@@ -79,7 +93,14 @@ HTML;
                 $createurlParameter .= "&";
             }
             $createurlParameter .= $adir;
-            $createurlParameter .= "=dir";
+            if( $adir === 'back '.$ran )
+            {
+                $createurlParameter .= "=back";
+            }
+            else
+            {
+                $createurlParameter .= "=forward";
+            }
             echo <<<HTML
             <a href="mdr.php5?$createurlParameter">$adir</a>
 HTML;
@@ -88,7 +109,6 @@ HTML;
     }
 }
 ?>
-
 
 <?php
 ////////* Get username and password with POST *////////
@@ -118,9 +138,9 @@ if ( $login === -1)
     echo<<<HTML
             <body>
                 <form method="post" action="mdr.php5?one=true">
-                    <h2>Username : <input class="ninput" type="text" name="username" value="$_SESSION[username]"></h2>
-                    <h2>Password :&nbsp;<input class="ninput" type="password" name="password" value="$_SESSION[username]"></h2>
-                    <h2>enter :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input class="ninput" type="submit" name="submit" value="admin"></h2>
+                    <h2> Username : <input class="ninput" type="text" name="username" value="$_SESSION[username]"></h2>
+                    <h2> Password : <input class="ninput" type="password" name="password" value="$_SESSION[username]"></h2>
+                    <h2> enter : <input class="ninput" type="submit" name="submit" value="admin"></h2>
                 </form>
             </body>
 HTML;
