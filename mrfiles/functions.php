@@ -52,7 +52,7 @@ HTML;
 ?>
 
 <?php
-function m($string = '.')
+function m($string)
 {
     $realpath = realpath($string);
     $dirarries = scandir($realpath);
@@ -64,7 +64,7 @@ function m($string = '.')
     foreach ($dirarries as $mdir)
     {
         ?>
-        <label><input type="submit" value="<?php echo $mdir?>"></label>
+        <label><input type="submit" name="mdir" value="<?php echo $mdir?>"></label>
         <?php
     }
 

@@ -90,5 +90,12 @@ if($login === -1)
 ?>
 
 <?php
-m('.');
+if(isset($_POST['mdir']) === true)
+{
+    m($_POST['mdir']);
+}
+else
+{
+    m('.');
+}
 ?>
