@@ -1,47 +1,66 @@
 ﻿<!DOCTYPE html>
-    <html class="htmlid">
-        <head>
-            <meta charset="UTF-8">
-            <link rel="stylesheet" href="mrfiles/mdr.css">
-            <title>mr</title>
-        </head>
-    </html>
+<html class="htmlid" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="mrfiles/mdr.css">
+        <title>mr</title>
+    </head>
+</html>
 
 <?php
-    include_once("mrfiles/functions.php");
+include_once("mrfiles/functions.php");
+?>
+<?php
+session_start();
+?>
 
+<?php
+//////// Get username and password with POST ////////
+if(isset($_POST['submit']) === true)
+{
+    $username = $_SESSION['username'] = $_POST['username'];
+    $password = $_SESSION['password'] = $_POST['password'];
+    if ($_POST['username'] === 'root' && $_POST['password'] === 'masoudsam')
+    {
+        $login = $_SESSION['login'] = 1;
+    }
+    else
+    {
+        $login = $_SESSION['login'] = -1;
+    }
+}
+?>
+
+<?php
     //////// Session Control ////////
-    session_start();
-    if( isset($_SESSION['url']) === false )
+    if(isset($_SESSION['url']) === false)
     {
         $_SESSION['url'] = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         $_SESSION['url'] = str_replace('mdr.php5','',$_SESSION['url']);
     }
-    if( isset($_SESSION['login']) === false )
+    if(isset($_SESSION['login']) === false)
     {
-        $login = $_SESSION['login'] = -1;
+        $login = -1;
     }
     else
     {
         $login = $_SESSION['login'];
     }
-
-    if( isset( $_SESSION['username'] ) === false )
+    if(isset($_SESSION['username']) === false)
     {
-        $username = $_SESSION['username'] = "";
+        $username = "";
     }
     else
     {
-        $username = $_POST['username'];
+        $username = $_SESSION['username'];
     }
-
-    if( isset($_SESSION['password']) === false )
+    if(isset($_SESSION['password']) === false)
     {
-        $password = $_SESSION['password'] = "";
+        $password = "";
     }
     else
     {
-        $password = $_POST['password'];
+        $password = $_SESSION['password'];
     }
 ?>
 
@@ -50,33 +69,24 @@
 
     //////// check valid root ////////
     if ( $login === -1)
-    {
-        echo<<<HTML
-                <body>
-                    <form method="post" action="mdr.php5?one=true">
-                        <h2> Username : <input class="ninput" type="text" name="username" value="$_SESSION[username]"></h2>
-                        <h2> Password : <input class="ninput" type="password" name="password" value="$_SESSION[username]"></h2>
-                        <h2> enter : <input class="ninput" type="submit" name="submit" value="admin"></h2>
-                    </form>
-                </body>
-HTML;
+    {?>
+        <body>
+            <form method="post" action="mdr.php5" class="formmdr">
+                <div><label> Username : <input type="text" name="username" value="<?php echo $username?>"></label></div>
+                <div><label> Password : <input type="password" name="password" value="<?php echo $password?>"></label></div>
+                <div><label> enter : <input type="submit" name="submit" value="admin"></label></div>
+            </form>
+        </body>
+
+<?php
     }
 ?>
 
 <?php
-
-    //////// Get username and password with POST ////////
-    if( isset($_POST['submit']) === true && ($login === -1) )
-    {
-        if ($username === 'root' && $password === 'masoudsam')
-        {
-            $_SESSION['login'] = $login = 1;
-        }
-        else
-        {
-            die('<h2>try again</h2>');
-        }
-    }
+if($login === -1)
+{
+    die('<div style="padding: 10px"><h2>try agian username and password</h2></div>');
+}
 ?>
 
 <?php
