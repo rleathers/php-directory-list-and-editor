@@ -83,9 +83,16 @@ if(isset($_POST['submit']) === true)
 ?>
 
 <?php
+if(isset($_POST['submit']) === true && $login === -1)
+{
+?>
+    <div style="padding: 10px"><h2>try agian username and password</h2></div>
+<?php
+}
+
 if($login === -1)
 {
-    die('<div style="padding: 10px"><h2>try agian username and password</h2></div>');
+    die();
 }
 ?>
 

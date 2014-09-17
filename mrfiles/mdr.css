@@ -14,6 +14,31 @@
 }
 .inputws
 {
+    text-shadow: 0 1px 1px black;
+    font-size: 16px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.5);
+    margin: 0;
+}
+.formmdr
+{
+    padding: 5px;
+}
+.formmdr label
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+.formmdr div
+{
+    padding: 5px;
+}
+.formmdr input
+{
     text-shadow: 0px 1px 1px black;
     font-size: 16px;
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -22,42 +47,31 @@
     border-radius: 13px;
     box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
     background: rgba(255,255,255,0.5);
+    width: 133px;
 }
-a
+.dirmdrinput
+ {
+     color: #96ffff;
+     text-shadow: 0 1px 1px black;
+     font-size: 20px;
+     border: none;
+     background-color: inherit;
+     margin-left: -10px;
+ }
+.dirmdrdiv
 {
-    padding: 5px;
-    left: 1%;
-    text-shadow: 0px 1px 2px black;
-    line-height: 143%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-    color: #c8ffff;
+    padding: 3px;
+    margin: 0;
 }
-.editor
+.dirmdrul
 {
-    width: 45%;
-    border-top: #808080 5px inset;
-    border-right: #808080 5px outset;
-    border-left: #808080 2px inset;
-    border-bottom: #808080 2px outset;
-
-    background: inherit;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-
-    -webkit-box-shadow: 0px 0px 33px 0px #333333;
-    -moz-box-shadow: 0px 0px 33px 0px #333333;
-    box-shadow: 0px 0px 33px 0px #333333;
-
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 19px;
-    text-shadow: 0px 1px 1px black;
-    color: #c8ffff;
-    z-index: 1;
+    margin: 0;
 }
-iframe
+.dirmdrli
+{
+    margin-left: -20px;
+}
+.miframe
 {
     z-index: 0;
     width: 53%;
@@ -84,40 +98,26 @@ iframe
     text-shadow: 0px 1px 1px black;
     color: #c8ffff;
 }
-.abu
+.editor
 {
-    text-shadow: 0px 1px 1px black;
-    font-size: 16px;
-    color: black;
+    width: 45%;
+    border-top: #808080 5px inset;
+    border-right: #808080 5px outset;
+    border-left: #808080 2px inset;
+    border-bottom: #808080 2px outset;
+
+    background: inherit;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+
+    -webkit-box-shadow: 0px 0px 33px 0px #333333;
+    -moz-box-shadow: 0px 0px 33px 0px #333333;
+    box-shadow: 0px 0px 33px 0px #333333;
+
     font-family: Georgia, Times, "Times New Roman", serif;
-    padding: 13px;
-    border: 0 solid #808080;
-    border-radius: 13px;
-    box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
-    background: rgba(255,255,255,0.5);
-}
-.formmdr
-{
-    padding: 5px;
-}
-.formmdr label
-{
-    font-size: 25px;
-    font-weight: bold;
-}
-.formmdr div
-{
-    padding: 5px;
-}
-.formmdr input
-{
+    font-size: 19px;
     text-shadow: 0px 1px 1px black;
-    font-size: 16px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    padding: 13px;
-    border: 0 solid #808080;
-    border-radius: 13px;
-    box-shadow:inset 0 0 4px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1);
-    background: rgba(255,255,255,0.5);
-    width: 133px;
+    color: #c8ffff;
+    z-index: 1;
 }
