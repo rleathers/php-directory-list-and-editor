@@ -99,7 +99,9 @@ if($login === -1)
 
 
 <form method="post" class="mch">
-    <input type="submit" name="mcd" value="change drive(windows)">
+    <input type="submit" name="mcdb" value="change drive(windows)">
+    <input type="submit" name="mdib" value="drives information">
+    <input type="hidden" name="mdir" value="<?php if(isset($_POST['mdir']) === true){echo $_POST['mdir'];}?>">
 </form>
 <?php
 if(isset($_POST['mdir']) === true)
@@ -111,23 +113,56 @@ else
     m('.');
 }
 ?>
+
 <?php
-if(isset($_POST['mcd']) === true)
+if(isset($_POST['mcdb']) === true)
 {
     ?>
-    <div style="float: right">
+    <div style="right: 4px;bottom: 0;position: absolute;">
+    <form method="post">
     <ol>
     <?php
-    $mdrive = mdrives();
+    $mdrive = mdrmdrives();
     foreach($mdrive as $drive)
     {
-        ?>
-        <li><?php echo $drive?><input type="submit" name="mcd" value="a"></li>
-        <?php
+    ?>
+        <li>
+        <div>
+        <label>
+        <?php echo $drive?>
+        <input type="submit" name="mcd" hidden="hidden" value="<?php echo $drive[6]?>">
+        </label>
+        </div>
+        </li>
+    <?php
     }
     ?>
     </ol>
+    </form>
     </div>
     <?php
+}
+?>
+
+<?php
+if(isset($_POST['mdib']) === true)
+{
+?>
+    <div style="right: 4px;bottom: 0;position: absolute;">
+    <ol>
+        <?php
+        $mdrive = mdrdriveinformation();
+        foreach($mdrive as $drive)
+        {
+        ?>
+            <li>
+            <?php echo $drive?>
+            </li>
+        <?php
+        }
+        ?>
+    </ol>
+    </div>
+<?php
 }
 ?>

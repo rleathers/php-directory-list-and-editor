@@ -1,5 +1,5 @@
 <?php
-function mdrives()
+function mdrmdrives()
 {
     $fso = new COM('Scripting.FileSystemObject');
     $D = $fso->Drives;
@@ -20,23 +20,28 @@ function mdrives()
             {
                 $n = "No label";
             }
-            $s = file_size($dO->FreeSpace) . " free of: " . file_size($dO->TotalSize);
+            $s = mdrfile_size($dO->FreeSpace) . " free of " . mdrfile_size($dO->TotalSize);
         }
         else
         {
             $n = "[Drive not ready]";
+        }
+        if($s === "")
+        {
+            $s = "No size";
         }
         $mar[] .= "Drive " . $dO->DriveLetter . ": - " . $type[$dO->DriveType] . " - " . $n . " - " . $s;
     }
     return $mar;
 }
 
-function file_size($size)
+function mdrfile_size($size)
 {
     $filesizename = array(" Bytes", " KB", " MB", " GB", " TB", " PB", " EB", " ZB", " YB");
     return round($size/pow(1024, ($i = floor(log($size, 1024)))), 2) . $filesizename[$i];
 }
-function changemdrive()
+function mdrdriveinformation()
 {
+
 }
 ?>
