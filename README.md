@@ -34,11 +34,11 @@ install
 how it work
 ==============================
 
-username : root.
-password : masoudsam.
+username: root.
+password: masoudsam.
 
-click on lines or names :
-1 - enter directory for directory .
+click on lines or names:
+1 - enter directory for directory.
 2 - open editor to see files or edit files for files.
 
 drives for windows.
