@@ -115,17 +115,19 @@ else
 if(isset($_POST['mcd']) === true)
 {
     ?>
+    <div style="float: right">
     <ol>
     <?php
     $mdrive = mdrives();
     foreach($mdrive as $drive)
     {
         ?>
-        <li><?php echo $drive?></li>
+        <li><?php echo $drive?><input type="submit" name="mcd" value="a"></li>
         <?php
     }
     ?>
     </ol>
+    </div>
     <?php
 }
 ?>
