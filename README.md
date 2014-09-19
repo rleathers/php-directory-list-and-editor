@@ -34,13 +34,13 @@ install
 how it work
 ==============================
 
-- username: root.
-- password: masoudsam.
+username: root. <br>
+password: masoudsam. <br>
 
 - click on lines or names:
-1 - enter directory for directory.
-2 - open editor to see files or edit files for files.
+1 - enter directory for directory. <br>
+2 - open editor to see files or edit files for files. <br>
 
 - drives for windows.
-change drives with click on right button in page.
-then click on a drive that showen in right of page.
+change drives with click on right button in page. <br>
+then click on a drive that showen in right of page. <br>
