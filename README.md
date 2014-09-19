@@ -34,6 +34,7 @@ install
 how it work
 ==============================
 
+- Authenticate<br>
 username: root.<br>
 password: masoudsam.
 
