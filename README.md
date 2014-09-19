@@ -34,8 +34,8 @@ install
 how it work
 ==============================
 
-username : root
-password : masoudsam
+username : root.
+password : masoudsam.
 
 click on lines or names :
 1 - enter directory for directory .
