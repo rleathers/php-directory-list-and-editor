@@ -16,15 +16,15 @@ written in
 screenshot
 ==============================
 
-files and directory browser
+files and directory browser.
 
 <img src="http://i58.tinypic.com/71hels.png" border="0">
 
-html editor
+html editor.
 
 <img src="http://i60.tinypic.com/35mjmuu.png" border="0">
 
-simple php editor
+simple php editor.
 
 <img src="http://i58.tinypic.com/nyxrnp.png" border="0">
 
