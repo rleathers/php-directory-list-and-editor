@@ -34,7 +34,7 @@ install
 how it work
 ==============================
 
-- username: root.
+- username: root..
 - password: masoudsam.
 
 - click on lines or names:
