@@ -44,7 +44,6 @@ function m($string)
         <?php
         }
     }
-
     ?>
     </ul>
     <?php

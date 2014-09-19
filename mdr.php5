@@ -9,6 +9,7 @@
 
 <?php
 include_once("mrfiles/functions.php");
+include_once("mrfiles/drives.php");
 ?>
 <?php
 session_start();
@@ -96,6 +97,10 @@ if($login === -1)
 }
 ?>
 
+
+<form method="post" class="mch">
+    <input type="submit" name="mcd" value="change drive(windows)">
+</form>
 <?php
 if(isset($_POST['mdir']) === true)
 {
@@ -104,5 +109,23 @@ if(isset($_POST['mdir']) === true)
 else
 {
     m('.');
+}
+?>
+<?php
+if(isset($_POST['mcd']) === true)
+{
+    ?>
+    <ol>
+    <?php
+    $mdrive = mdrives();
+    foreach($mdrive as $drive)
+    {
+        ?>
+        <li><?php echo $drive?></li>
+        <?php
+    }
+    ?>
+    </ol>
+    <?php
 }
 ?>
