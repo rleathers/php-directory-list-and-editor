@@ -6,6 +6,13 @@ simple php directory lister that included with a simple file editor for edit and
 - Edit
 - list
 
+written in
+==============================
+
+- HTML
+- PHP
+- use .Net runtime for change drive on windows (optional)
+
 install
 ==============================
 
